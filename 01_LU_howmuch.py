@@ -1,13 +1,12 @@
-# Lucky Unicorn Decomposition
-# Get initial amount and check that it's valid
+# Component 1: Ask user how much money
+# Check that amount is an integer that is more / than equal to 1 and less than /
 
 
-# Integer checking function
+# Number checking function goes here
 def intcheck(question, low, high):
     valid = False
+    error = "Whoops! Please enter an integer between {} and {}".format(low, high)
     while not valid:
-        error = "Whoops! Please enter an integer between {} and {}".format(low, high)
-
         try:
             response = int(input("Enter an integer between {} and {}: ".format(low, high)))
 

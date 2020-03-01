@@ -9,22 +9,33 @@
 # Assume starting amount is $10
 total = int(input("How much would you like to play with? "))
 
-# Allow manual token input for testing purpose
-token = input("enter a token: ")
+keep_going = ""
+while keep_going == "":
 
-# Adjust total correctly for a given token
-if token == "unicorn":
-    total += 5
-    feedback = "Congratulation you won $5.00 "
-elif token == "donkey":
-    total -= 1
-    feedback = "Sorry, you did not win anything this round "
-else:
-    total -= 0.5
-    feedback = "Congratulation you won 50c "
+     # Allow manual token input for testing purpose
+    token = input("enter a token: ")
+
+    # Adjust total correctly for a given token
+    if token == "unicorn":
+        total += 5
+        feedback = "Congratulation you won $5.00 "
+    elif token == "donkey":
+        total -= 1
+        feedback = "Sorry, you did not win anything this round "
+    else:
+        total -= 0.5
+        feedback = "Congratulation you won 50c "
 
 
-print()
+    print()
 
-print(feedback)
-print("You have {} to play with".format(total))
+    print(feedback)
+    print("You have {} to play with".format(total))
+
+    if total < 1:
+        print("Sorry you don't have enough money to continue. Game over")
+        keep_going = "end"
+    else:
+        keep_going = input("Press <enter> to play again key to quit")
+
+print("Thank you for playing")
