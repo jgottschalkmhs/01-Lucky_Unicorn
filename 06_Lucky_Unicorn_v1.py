@@ -20,15 +20,13 @@ def intcheck(question, low, high):
         except ValueError:
             print(error)
 
-
 # main routine goes here
 
 # Ask user how much they want to play with (min $1, max $10)
 balance = intcheck("How much money do you want to play with? ", 1, 10)
 
 keep_going  = ""
-if __name__ == '__main__':
-    while keep_going == "":
+while keep_going == "":
 
 
         # token list includes 10 items to prevent too many unicorns being chosen
@@ -63,7 +61,7 @@ if __name__ == '__main__':
             print("Sorry you don't have enough money to continue. Game over")
             keep_going = "end"
         else:
-            keep_going = input("Press <enter> to play again key to quit")
+            keep_going = input("Press <enter> to play or any key to quit")
 
 
 # farewell user at end of game.
