@@ -54,8 +54,8 @@ print("- Donkey: ${:.2f}".format(DONKEY))
 
 
 
-# Ask user how much they want to play with (min $1, max $10)
-balance = intcheck("How much money do you like to play with? $", 1, 10)
+# Ask user how much they want to play with (min $1, max $25)
+balance = intcheck("How much money do you like to play with? $", 1, 25)
 round_count = 0
 
 print("**** Game in Progress ****")
