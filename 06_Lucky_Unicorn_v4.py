@@ -43,7 +43,7 @@ DONKEY = 0  # donkey does not win anything
 
 print("*** Welcome to the Lucky Unicorn Game ****")
 print()
-print("To play, enter an amount of money between $1 and $10 (whole dollar only).")
+print("To play, enter an amount of money between $1 and $25 (whole dollar only).")
 print()
 print("- It costs $1/round")
 print()
